@@ -7,32 +7,12 @@ function updateClock() {
     document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-// Fonction pour lancer la recherche
+// Fonction pour lancer la recherche sur DuckDuckGo
 function performSearch() {
     const query = document.getElementById('search').value;
-    const engine = document.getElementById('searchEngine').value;  // Obtenir le moteur de recherche sélectionné
-
     if (query) {
-        let searchUrl = '';
-        switch (engine) {
-            case 'google':
-                searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-                break;
-            case 'bing':
-                searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-                break;
-            case 'duckduckgo':
-                searchUrl = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
-                break;
-            case 'yahoo':
-                searchUrl = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
-                break;
-            default:
-                searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-                break;
-        }
-        // Mettre à jour la page avec l'URL du moteur de recherche sélectionné
-        window.location.href = searchUrl;  // Utiliser window.location.href pour rester dans le même onglet
+        const searchUrl = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;  // URL de recherche DuckDuckGo
+        window.open(searchUrl, '_self');  // Ouvrir dans l'onglet actuel
     }
 }
 
