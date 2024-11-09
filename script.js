@@ -31,7 +31,8 @@ function performSearch() {
                 searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
                 break;
         }
-        window.open(searchUrl, '_self');  // Ouvrir dans l'onglet actuel
+        // Mettre à jour la page avec l'URL du moteur de recherche sélectionné
+        window.location.href = searchUrl;  // Utiliser window.location.href pour rester dans le même onglet
     }
 }
 
