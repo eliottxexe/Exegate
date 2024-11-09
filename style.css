@@ -1,0 +1,74 @@
+/* Styles de base pour la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2e3440;
+    color: #eceff4;
+}
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+}
+
+/* Style de l'horloge */
+.clock {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Barre de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px 0 0 20px;
+    border: 2px solid #5e81ac;
+    outline: none;
+    color: #2e3440;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 0 20px 20px 0;
+    border: 2px solid #5e81ac;
+    background-color: #5e81ac;
+    color: #eceff4;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #88c0d0;
+}
+
+/* Liens rapides */
+.quick-links {
+    margin-top: 30px;
+}
+
+.quick-links a {
+    color: #88c0d0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.quick-links a:hover {
+    color: #bf616a;
+}
