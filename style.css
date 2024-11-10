@@ -11,19 +11,25 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #2e3440;
+    background-color: #2b303b; /* Fond légèrement plus contrasté */
     color: #eceff4;
 }
 
 /* Conteneur principal */
 .container {
     text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #3b4252;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre douce pour un effet d'élévation */
 }
 
 /* Style de l'horloge */
 .clock {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #d8dee9;
+    font-weight: bold;
 }
 
 /* Barre de recherche */
@@ -35,26 +41,35 @@ body {
 
 #search {
     width: 300px;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
-    border-radius: 20px 0 0 20px;
-    border: 2px solid #5e81ac;
+    border-radius: 25px 0 0 25px;
+    border: none;
     outline: none;
+    color: #2e3440;
+    background-color: #d8dee9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#search:focus {
+    background-color: #eceff4;
     color: #2e3440;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 1rem;
-    border-radius: 0 20px 20px 0;
-    border: 2px solid #5e81ac;
+    border-radius: 0 25px 25px 0;
+    border: none;
     background-color: #5e81ac;
     color: #eceff4;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
     background-color: #88c0d0;
+    transform: scale(1.05);
 }
 
 /* Liens rapides */
@@ -63,10 +78,11 @@ button:hover {
 }
 
 .quick-links a {
-    color: #88c0d0;
+    color: #81a1c1;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 .quick-links a:hover {
