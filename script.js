@@ -4,14 +4,14 @@ function updateClock() {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-    document.getElementById('clock').innerText = ${hours}:${minutes}:${seconds};
+    document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`; // Utilisation de backticks
 }
 
 // Fonction pour lancer la recherche
 function performSearch() {
     const query = document.getElementById('search').value;
     if (query) {
-        const searchUrl = https://www.google.com/search?q=${encodeURIComponent(query)};
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`; // Utilisation de backticks
         window.open(searchUrl, '_self');  // Ouvrir dans l'onglet actuel
     }
 }
