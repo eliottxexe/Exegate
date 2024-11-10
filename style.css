@@ -72,14 +72,19 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Liens rapides */
+.quick-links {
+    margin-top: 30px;
+}
+
 .quick-links a {
-    margin: 0 10px;
+    color: #81a1c1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-.quick-links .logo {
-    width: 40px;  /* Ajustez la taille du logo selon vos préférences */
-    height: 40px;
-    display: inline-block;
-    vertical-align: middle;
+.quick-links a:hover {
+    color: #bf616a;
 }
-
