@@ -4,14 +4,14 @@ function updateClock() {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-    document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('clock').innerText = ${hours}:${minutes}:${seconds};
 }
 
-// Fonction pour lancer la recherche sur DuckDuckGo
+// Fonction pour lancer la recherche
 function performSearch() {
     const query = document.getElementById('search').value;
     if (query) {
-        const searchUrl = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;  // URL de recherche DuckDuckGo
+        const searchUrl = https://www.google.com/search?q=${encodeURIComponent(query)};
         window.open(searchUrl, '_self');  // Ouvrir dans l'onglet actuel
     }
 }
